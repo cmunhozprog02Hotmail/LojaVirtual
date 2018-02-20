@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using LojaVirtual.Models;
 
 namespace LojaVirtual.Controllers
 {
@@ -29,9 +28,6 @@ namespace LojaVirtual.Controllers
             return View();
         }
 
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        
     }
 }
