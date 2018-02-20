@@ -28,8 +28,6 @@ namespace LojaVirtual.Models
         public bool Visivel { get; set; }
 
         // relacão 1:N
-        public int CategoriaId { get; set; }
-
-        public Categoria Categoria { get; set; }
+        public List<Categoria> Categoria { get; set; }
     }
 }
