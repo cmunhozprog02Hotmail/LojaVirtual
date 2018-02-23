@@ -28,6 +28,7 @@ namespace LojaVirtual.Models
         public bool Visivel { get; set; }
 
         // relacão 1:N
+        public int DepartamentoId { get; set; }
         public List<Departamento> Departamento { get; set; }
     }
 }
